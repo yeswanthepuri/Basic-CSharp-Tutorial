@@ -1,0 +1,11 @@
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\bin\Debug\netcoreapp2.2\GradeBook.deps.json
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\bin\Debug\netcoreapp2.2\GradeBook.runtimeconfig.json
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\bin\Debug\netcoreapp2.2\GradeBook.runtimeconfig.dev.json
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\bin\Debug\netcoreapp2.2\GradeBook.dll
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\bin\Debug\netcoreapp2.2\GradeBook.pdb
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.csprojAssemblyReference.cache
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.csproj.CoreCompileInputs.cache
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.AssemblyInfoInputs.cache
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.AssemblyInfo.cs
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.dll
+C:\c#\csharp-fundamentals\YeswanthDemoforCSharp\GradeBook\obj\Debug\netcoreapp2.2\GradeBook.pdb
