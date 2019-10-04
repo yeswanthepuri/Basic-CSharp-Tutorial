@@ -36,3 +36,17 @@ if u want to pass any parameter to the application the syntax is below.
  execute this dotnet run --yeswanth
  O/P: Welcome yeswanth, You are a Asshole if you miss this language Syntax (lol)
  ------------------------------------------------------------------------------------------------------------------------
+Deceleration of array 
+var numbers =new double[3]{10.2,23.4,24.3};
+array has some limitation so we use some data structures like Stack and Ques we will start with simple DS call List.
+
+List implementation:
+
+List: Is present in the name space System.Collections.Generic;
+List<double> grade=new List<double>() {12.7,10.3,5.6};
+and also we can add the values dynamically as they are stretchable in size.
+grade.Add(12.3);
+Getting Value from List
+grade[0];
+O/P: 12.7
+--------------------------------------------------------------------------------------------------------------------------

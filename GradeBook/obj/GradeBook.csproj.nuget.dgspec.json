@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csproj": {}
+    "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj": {}
   },
   "projects": {
-    "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csproj": {
+    "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csproj",
+        "projectPath": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj",
         "packagesPath": "C:\\Users\\us50783\\.nuget\\packages\\",
         "outputPath": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
