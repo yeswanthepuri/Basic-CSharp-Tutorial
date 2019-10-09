@@ -50,3 +50,7 @@ Getting Value from List
 grade[0];
 O/P: 12.7
 --------------------------------------------------------------------------------------------------------------------------
+Class in C# - C# is a Object oriented programing language.
+
+def: Class is a blue print, It defines how i am going to build the objects. we instantiate a class to create a object.
+
