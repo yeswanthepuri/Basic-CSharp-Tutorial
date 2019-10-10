@@ -63,4 +63,4 @@ Reference type and value types:
 Reference Type                                                                                  Value type
 ex: var b=new Book("Yeswanth");                                                                 ex:var x=3;
 1.Reference types hold's the pointer or the address in which the object is stored.              1. where as in value type it hold's the value it self.
-2.Variable that hold's a reference                                                              2. Variable that hold's the value 
+2.Variable that hold's a reference                                                              2. Variable that hold's the value
