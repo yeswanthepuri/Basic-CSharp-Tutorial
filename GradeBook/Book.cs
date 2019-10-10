@@ -3,40 +3,57 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    internal class Book
+    public  class Statistics
+    {
+        public  double HighGrade { get; set; }
+        public  double LowGrade { get; set; }
+        public  double AverageGrade { get; set; }
+
+
+    }
+    public class Book
     {
         #region Private member
         private string name { get; set; }
-        private static double HighGrade { get; set; } = double.MinValue;
-        private static double LowGrade { get; set; } = double.MaxValue;
         private List<double> Grade { get; set; } = new List<double>();
         
-        private double GetAverageofGrades()
+        private Statistics GetAverageofGrades(Statistics statistics)
         {
-            var sum = 0.0;
-            foreach (var item in Grade)
+            statistics.AverageGrade = 0.0;
+            statistics.HighGrade=double.MinValue;
+            statistics.LowGrade=double.MaxValue;
+            foreach (var grade in Grade)
             {
-                HighGrade = Math.Max(item, HighGrade);
-                LowGrade = Math.Max(item, LowGrade);
-                sum += item;
+                statistics.HighGrade = Math.Max(grade, statistics.HighGrade);
+                statistics.LowGrade = Math.Min(grade, statistics.LowGrade);
+                statistics.AverageGrade += grade;
             }
-            return sum /= Grade.Count;
+            statistics.AverageGrade /= Grade.Count;
+            return statistics;
+        }
+
+        internal void WriteStatistics(Statistics statistics)
+        {
+            Console.WriteLine($"Average Grade is: {statistics.AverageGrade}");
+            Console.WriteLine($"Highest Grade {statistics.HighGrade}");
+            Console.WriteLine($"LowGrade is : {statistics.LowGrade}");
+            Console.Read();
         }
         #endregion
-        
+
         public Book(string name)
         {
             this.name = name;
         }
 
-        internal void ShowStatics()
+        public Statistics GetStatistics()
         {
-            double result = GetAverageofGrades();
-            Console.WriteLine($"Average Grade is: {result}");
-            Console.WriteLine($"Highest Grade {Book.HighGrade}");
-            Console.WriteLine($"LowGrade is : {Book.LowGrade}");
-            Console.Read();
+            Statistics statistics=new Statistics();
+            GetAverageofGrades(statistics);
+            return statistics;
         }
+
+
 
         public void AddGrade(double gradeval)
         {
