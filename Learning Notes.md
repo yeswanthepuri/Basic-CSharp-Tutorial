@@ -53,4 +53,14 @@ O/P: 12.7
 Class in C# - C# is a Object oriented programing language.
 
 def: Class is a blue print, It defines how i am going to build the objects. we instantiate a class to create a object.
+-------------------------------------------------------------------------------------------------------------------------------
+static and non static:
 
+Static is the property of function that is related to a class and non static is the property or function belongs to a objet instance.
+-------------------------------------------------------------------------------------------------------------------------------
+Reference type and value types:
+
+Reference Type                                                                                  Value type
+ex: var b=new Book("Yeswanth");                                                                 ex:var x=3;
+1.Reference types hold's the pointer or the address in which the object is stored.              1. where as in value type it hold's the value it self.
+2.Variable that hold's a reference                                                              2. Variable that hold's the value

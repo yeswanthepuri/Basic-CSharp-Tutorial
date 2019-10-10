@@ -1715,14 +1715,14 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "Gradebook/1.0.0": {
+      "GradeBook/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "compile": {
-          "bin/placeholder/Gradebook.dll": {}
+          "bin/placeholder/GradeBook.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Gradebook.dll": {}
+          "bin/placeholder/GradeBook.dll": {}
         }
       }
     }
@@ -5989,16 +5989,16 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Gradebook/1.0.0": {
+    "GradeBook/1.0.0": {
       "type": "project",
-      "path": "../GradeBook/Gradebook.csproj",
-      "msbuildProject": "../GradeBook/Gradebook.csproj"
+      "path": "../GradeBook/GradeBook.csProj",
+      "msbuildProject": "../GradeBook/GradeBook.csProj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "FluentAssertions >= 5.9.0",
-      "Gradebook >= 1.0.0",
+      "GradeBook >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
       "xunit >= 2.4.0",
@@ -6035,8 +6035,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\Gradebook.csproj": {
-              "projectPath": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\Gradebook.csproj"
+            "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj": {
+              "projectPath": "C:\\c#\\csharp-fundamentals\\YeswanthDemoforCSharp\\GradeBook\\GradeBook.csProj"
             }
           }
         }

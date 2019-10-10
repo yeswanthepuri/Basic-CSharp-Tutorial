@@ -14,7 +14,7 @@ namespace GradeBook
     public class Book
     {
         #region Private member
-        private string name { get; set; }
+        public string Name { get; set; }
         private List<double> Grade { get; set; } = new List<double>();
         
         private Statistics GetAverageofGrades(Statistics statistics)
@@ -43,7 +43,7 @@ namespace GradeBook
 
         public Book(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
         public Statistics GetStatistics()
