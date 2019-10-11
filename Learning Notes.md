@@ -64,3 +64,13 @@ Reference Type                                                                  
 ex: var b=new Book("Yeswanth");                                                                 ex:var x=3;
 1.Reference types hold's the pointer or the address in which the object is stored.              1. where as in value type it hold's the value it self.
 2.Variable that hold's a reference                                                              2. Variable that hold's the value
+3.all classes are reference type                                                               3.all struct are value type
+
+
+
+
+
+
+By default Parameters are passed by value. In case if u want to pass a reference just keep ref before that.
+
+working with value type:
