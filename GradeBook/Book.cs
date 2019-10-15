@@ -3,20 +3,44 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
     public class Statistics
     {
         public double HighGrade { get; set; }
         public double LowGrade { get; set; }
         public double AverageGrade { get; set; }
-
+        public char GradeLetter { get; set; }
 
     }
     public class Book
     {
+
+
         #region Private member
         public string Name { get; set; }
         private List<double> Grade { get; set; } = new List<double>();
-
+        public void AddGrade(char letter)
+        {
+            switch (letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+                case 'C':
+                    AddGrade(70);
+                    break;
+                case 'D':
+                    AddGrade(60);
+                    break;
+                default:
+                    AddGrade(0);
+                    break;
+            }
+        }
         private Statistics GetAverageofGrades(Statistics statistics)
         {
             statistics.AverageGrade = 0.0;
@@ -62,11 +86,15 @@ namespace GradeBook
         }
 
 
-
+        public event GradeAddedDelegate GradeAdded;
         public void AddGrade(double gradeval)
         {
             if (gradeval <= 100 && gradeval > 0)
                 Grade.Add(gradeval);
+            if (GradeAdded != null)
+            {
+                GradeAdded(this, new EventArgs());
+            }
         }
     }
 }

@@ -4,8 +4,17 @@ using System.Linq;
 
 namespace GradeBook
 {
+
     class Program
     {
+        static void OnGradeAdded(object sender, EventArgs args)
+        {
+            Console.WriteLine("Grade Added");
+        }
+        static void OnGradeAddedWrong(object sender, EventArgs args)
+        {
+            Console.WriteLine("wrong Added");
+        }
         /*
         Static Key word - they are instance membors or methods of the class.
         */
@@ -16,9 +25,19 @@ namespace GradeBook
             //var numbers = new []{ 10.2, 23.4, 24.3 };
             //var grade=new List<double>(){ 10.2, 23.4, 24.3 };
             //Add some Grades
-            book.AddGrade(56.1);
-            book.AddGrade(90.2);
-            book.AddGrade(32.2);
+            char readvalue;
+            do
+            {
+                Console.WriteLine("Please Enter a Grade, or enter Q to Quit");
+                readvalue = Console.ReadLine()[0];
+                if(readvalue == 'Q')
+                break;
+                else
+                {
+                book.AddGrade(readvalue);
+                book.GradeAdded += OnGradeAdded;
+                }
+            } while (true);
             //Get Statist
             var statistics = book.GetStatistics();
             book.WriteStatistics(statistics);

@@ -74,3 +74,65 @@ ex: var b=new Book("Yeswanth");                                                 
 By default Parameters are passed by value. In case if u want to pass a reference just keep ref before that.
 
 working with value type:
+----------------------------------------------------------------------------------------------------------------------------
+jumping statement :
+
+break: use to skip the look, and terminate the look if it hits this line of code.
+continue: just skip the lines below the loop and just continue with the loop again
+goto: allow the use to to skip and go to the statement where it's labeled.
+----------------------------------------------------------------------------------------------------------------------------
+Switch Statement:
+switch (letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+                case 'C':
+                 AddGrade(70);
+                    break;
+                case 'D':
+                 AddGrade(60);
+                    break;
+                default:
+                AddGrade(0);
+                    break;
+            }
+
+Pattern Matching in C#: this is a character of C# 7
+-------------------------------------------------------------------------------------------
+ Property:
+//Auto Implementation.
+ public string Name
+ {
+     get;
+     set;
+ }
+ //This is a implementation property; this helps to have a full control on my property.
+  public string Name
+ {
+     //This will get executed when we try to initialize a property.(or) read a property.
+     get
+     {
+        return "Krithvika";
+     }
+     set
+     {
+         if(!String.IsnullOrEmpty(value))
+        name = value;
+     }
+ }
+//Private field
+ private string name;
+
+ //ReadOnly and const
+
+ readonly   : can be changed at the time or creation or at any constructor.
+ const      : Only at a time of initialization. they are like static member's of the class.
+
+
+ //Events and Delegates:
+ Events are build on Delegates.
+ Delegate: is a variable that matches the Method signature. Please the example in test. "Chech_delegate_canInvoke_otherMethod"
